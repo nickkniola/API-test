@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Git Checkout') {
       steps {
-        git(url: 'https://github.com/nickkniola/API-test.git', branch: 'master')
+        git 'https://github.com/nickkniola/API-test.git'
         echo 'Checked out from Github'
       }
     }
